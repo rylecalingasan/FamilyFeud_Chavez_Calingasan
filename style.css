@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#game-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+}
+
+.score-table {
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.score-table th, .score-table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#results {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.team-controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#player-names-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+form input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#start-game, #submit-answer {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    color: red;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    .team-controls {
+        flex-direction: column;
+    }
+
+    #player-names-form {
+        flex-direction: column;
+    }
+
+    form input {
+        margin-bottom: 10px;
+    }
+}

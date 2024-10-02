@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Feud Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Family Feud Game</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Welcome to the Family Feud Game! In this game, two teams will compete to guess the most popular answers to survey questions. Try to get the highest score to win!</p>
+    </section>
+
+    <div id="game-container">
+        <h2>Game Setup</h2>
+
+        <ul>
+            <li>Answer 1</li>
+            <li>Answer 2</li>
+            <li>Answer 3</li>
+            <li>Answer 4</li>
+        </ul>
+
+        <form id="answer-form" method="POST">
+            <label for="answer">Enter your answer:</label>
+            <input type="text" id="answer" name="answer" required>
+            <button type="submit">Submit Answer</button>
+        </form>
+
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th>Team 1</th>
+                    <th>Team 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="team1-score">0</td>
+                    <td id="team2-score">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="results"></div>
+    </div>
+
+    <div class="team-controls">
+        <button type="button">Pass</button>
+        <button type="button">Play</button>
+    </div>
+
+    <form id="player-names-form">
+        <label for="player1">Player 1 Name:</label>
+        <input type="text" id="player1" name="player1" required>
+        <label for="player2">Player 2 Name:</label>
+        <input type="text" id="player2" name="player2" required>
+        <button type="submit">Start Game</button>
+    </form>
+
+    <img src="buzzer.png" alt="Family Feud Buzzer" />
+
+    <div id="countdown-timer" hidden></div>
+
+    <progress id="time-left" value="0" max="100"></progress>
+
+    <footer>
+        <h3>Game Over!</h3>
+    </footer>
+
+    <audio controls>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#rules">Rules</a> |
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+
+</body>
+</html>
